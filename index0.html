@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>sanae tsunemi / portfolio</title>
+  <meta name="description" content="Wedデザイナー/Webコーダー/Webディレクター/フロントエンドエンジニア。常味早苗のポートフォリオサイトです。">
+  <link rel="shortcut icon" href="other/favicon.ico">
+  <script type="text/javascript" src="other/jquery-3.2.1.min.js"></script>
+  <style>
+      @font-face {
+      font-family: 'MyFont';
+      src: url(font/segoe-script.ttf);
+    }
+    
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-weight: bold;
+      font-family: MyFont;
+      color: #555;
+    }
+    
+    #start {
+      background-color: white;
+    }
+    
+    .start {
+      width: 70%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .start img {
+      width: 100%;
+      height: auto;
+    }
+    
+    footer {
+      text-align: center;
+    }
+    
+    small {
+      font-size: 1vw;
+    }
+    
+    @media screen and (max-width:768px) and (min-width:481px) {
+      .start {
+        width: 85%;
+      }
+    }
+    
+    @media screen and (max-width:480px) {
+      .start {
+        width: 100%;
+      }
+  </style>
+  <script type="text/javascript">
+    waitTimer = 6;
+    url = "index.html";
+
+    function jumpPage() {
+      location.href = url;
+    }
+    setTimeout("jumpPage()", waitTimer * 800)
+  </script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-101885271-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body id="start">
+  <div class="start">
+    <img src="other/loading_amime.gif" alt="rording_anime">
+  </div>
+  <footer>
+    <small>Copyright &copy; 2017 SANAE TSUNEMI. All Rights Reserved.</small>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>sanae tsunemi / portfolio</title>
+    <meta name="description" content="Wedデザイナー/Webコーダー/Webディレクター/フロントエンドエンジニア。常味早苗のポートフォリオサイトです。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="other/favicon.ico">
+    <script type="text/javascript" src="other/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            $('#top').on('click', function() {
+                $('#top_page').fadeIn('slow'), $('#profile_page,#work_page,#contact_page').fadeOut('slow'),
+                    $('#top').css('color', 'crimson'), $('#profile, #work, #contact').css('color', '#555');
+            });
+            $('#profile').on('click', function() {
+                $('#profile_page').fadeIn('slow'), $('#top_page,#work_page,#contact_page').fadeOut('slow'),
+                    $('#profile').css('color', 'crimson'), $('#top, #work, #contact').css('color', '#555');;
+            });
+            $('#work').on('click', function() {
+                $('#work_page').fadeIn('slow'), $('#top_page,#profile_page,#contact_page').fadeOut('slow'), $('#work').css('color', 'crimson'),
+                    $('#top,#profile, #contact').css('color', '#555');;
+            });
+            $('#contact').on('click', function() {
+                $('#contact_page').fadeIn('slow'), $('#top_page,#profile_page,#work_page').fadeOut('slow'), $('#contact').css('color', 'crimson'),
+                    $('#top, #profile, #work').css('color', '#555');;
+            });
+        });
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="leastjs/least.min.css" rel="stylesheet" />
+    <script src="leastjs/least.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.least-gallery').least();
+        });
+
+    </script>
+    <style>
+        * {
+            font-family: MyFont2;
+            line-height: 1.5;
+        }
+        
+        .top_comment {
+            top: 35vh;
+        }
+        
+        .top_comment p {
+            line-height: 2;
+        }
+        
+        #nav p {
+            font-size: 2vw;
+        }
+
+    </style>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-101885271-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>ポートフォリオ</h1><a id="langage" href="index.html">English / 日本語</a></header>
+        <main>
+            <div id="nav"><a id="top" href="#">トップ</a><a id="profile" href="#">プロフィール</a><a id="work" href="#">作品</a>
+                <p>- ウェブサイト</p>
+                <p>- ロゴ</p>
+                <p>- バナー</p>
+                <p>- DTPデザイン</p>
+                <p>- その他</p><a id="contact" href="#">コンタクト</a></div>
+            <article class="contents">
+                <div id="top_page">
+                    <div class="top_comment">
+                        <p>こんにちは!
+                            <br>私はウェブクリエイターです.
+                            <br>ご覧いただきありがとうございます.
+                            <br>ごゆっくりどうぞ.
+                            <br>
+                            <br><span>ツネミ サナエ</span></p>
+                    </div>
+                </div>
+                <div id="profile_page">
+                    <h2>プロフィール</h2>
+                    <div class="profile_comment">
+                        <p>常味 早苗 (ツネミ サナエ)
+                            <br>出身: 東京
+                            <br>誕生日: 1984/05/06
+                            <br>血液型: A
+                            <br>好きな言葉 :
+                            <br>『Thank you for Special days!!』
+                            <br>＝何気ない一日が特別。日々に感謝。
+                            <br>趣味: 旅行 &#x26; 写真</p>
+                        <br>
+                        <section id="least">
+                            <div id=" least-preview">
+                                <ul class="least-gallery">
+                                    <li>
+                                        <a href="http://sanae-tsunemi.sub.jp/hobby/index0.html" title="Around the world" data-subtitle="" data-caption="around the world" target="_blank"><img src="images/aroundtheworld.jpg" alt="around the world"></a>
+                                    </li>
+                                </ul><a href="http://sanae-tsunemi.sub.jp/hobby/index0.html" target="_blank">趣味サイト<br>『Around the world Happiness of 184day's』<br>〜世界一周　184日間の旅〜</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="work_page">
+                    <h2>作品</h2>
+                    <section id="least">
+                        <div id=" least-preview">
+                            <ul class="least-gallery">
+                                <!-- 1th thumbnail -->
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/hobby/index0.html" title="Around the world" data-subtitle="" data-caption="around the world" target="_blank">
+                                        <img src="images/aroundtheworld.jpg" alt="around the world">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/ROUTE_ZERO/index0.html" title="ROUTE ZERO" data-subtitle="Web site" data-caption="ROUTE_ZERO" target="_blank"><img src="images/routezero.jpg" alt="ROUTE_ZERO"></a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/adjustin/index.html" title="adjustin" data-subtitle="Web site" data-caption="adjustin" target="_blank"><img src="images/adjustin.jpg" alt="adjustin"></a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/adjustin_logo/index.html" title="adjustin logo" data-subtitle="Logo" data-caption="adjustin_logo" target="_blank"><img src="images/adjustin_logo.jpg" alt="adjustin_logo" /></a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/name_logo/index.html" title="name logo" data-subtitle="Logo" data-caption="name_logo" target="_blank"><img src="images/name_logo.jpg" alt="name_logo" /></a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/eco_bridge/index.html" title="Eco Bridge" data-subtitle="Banner" data-caption="eco_bridge" target="_blank"><img src="images/eco_bridge.jpg" alt="eco_bridge" /></a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/adjust_academy/index.html" title="Adjust Academy" data-subtitle="" data-caption="adjust_academy" target="_blank"><img src="images/dtp.jpg" alt="adjust_academy" /></a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/green_camp/index.html" title="(coding)" data-subtitle="other" data-caption="green_camp" target="_blank"><img src="images/coding.jpg" alt="green_camp" /></a>
+                                </li>
+                                <li>
+                                    <a href="http://sanae-tsunemi.sub.jp/forest_studio/index.html" title="(Responsive)" data-subtitle="other" data-caption="forest_studio" target="_blank"><img src="images/Responsive.jpg" alt="forest_studio" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <h2>スキル</h2>
+                    <p class="skil">言語 : HTML5 , CSS3 , JavaScript(JQuery) , PHP
+                        <br> ツール : Photoshop , Illustrator , Dreamweaver
+                        <br> CMS : Wordpress</p>
+                </div>
+                <div id="contact_page">
+                    <h3>コンタクト</h3>
+                    <div class="adress">
+                        <a href="https://www.facebook.com/sana.tsune.54" target="_blank"><img src="images/facebook.png" alt="facebook">Face book</a>
+                        <br>
+                        <br>
+                        <a href="mailto:sana.t3739&#64;gmail.com" target="_blank"><img src="images/mail.png" alt="mail">sana.t3739&#64;gmail.com</a>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer><small>Copyright &copy;
+        2017 SANAE TSUNEMI. All Rights Reserved.</small></footer>
+    </div>
+    <!--end div#wrapper-->
+</body>
+
+</html>
