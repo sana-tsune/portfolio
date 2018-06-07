@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+/*リセットCSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*---body-------------------*/
+
+body {
+  font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+  background-image: url(../../../../green_camp/images/back.gif);
+}
+
+
+/*---wrapper-------------------*/
+
+#wrapper {
+  width: 800px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+
+/*---header-------------------*/
+
+header {
+  height: 170px;
+  padding-top: 30px;
+  padding-left: 20px;
+  background-image: url(../../../../green_camp/images/green-top.jpg);
+}
+
+header p {
+  font-size: 0.75em;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #fff;
+}
+
+header h1 {
+  height: 60px;
+}
+
+
+/*---nav-------------------*/
+
+nav {
+  padding: 10px;
+  background-color: #ddd;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  width: 20%;
+  float: left;
+}
+
+nav li a {
+  display: block;
+  font-size: 0.875em;
+  color: #ccc;
+  text-decoration: none;
+  line-height: 38px;
+  background-color: #024002;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+
+nav li:nth-of-type(5) a {
+  border-right: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #fff;
+}
+
+.home .homemenu a,
+.event .eventmenu a,
+.contact .contactmenu a {
+  background-color: #008000;
+}
+
+
+/*---main-------------------*/
+
+main {
+  border: 1px dotted #024002;
+  margin: 20px 10px;
+  background-image: url(../../../../green_camp/images/bar.jpg);
+  background-position: left top;
+  background-repeat: repeat-y;
+}
+
+
+/*---article-------------------*/
+
+article {
+  width: 580px;
+  float: right;
+}
+
+article section {
+  margin-top: 30px;
+}
+
+article section:first-child {
+  margin-top: 0;
+}
+
+article h2 {
+  font-size: 0.875em;
+  color: #fff;
+  background-color: #024002;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+article section p {
+  font-size: 0.875em;
+  color: #000;
+  line-height: 1.5;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+article section p img {
+  float: right;
+  margin-left: 10px;
+}
+
+article section h3 {
+  font-size: 1em;
+  color: #024002;
+  clear: both;
+  margin-top: 30px;
+  padding-left: 24px;
+  border-bottom: 2px solid #024002;
+  background-image: url(../../../../green_camp/images/mark.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: 20px;
+}
+
+
+/*---aside-------------------*/
+
+aside {
+  width: 170px;
+  float: left;
+  text-align: center;
+  padding-top: 5px;
+}
+
+
+/*---footer-------------------*/
+
+footer {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 2px solid #024002;
+}
+
+footer small {
+  font-size: 0.75em;
+  color: #024002;
+  text-align: center;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  line-height: 40px;
+}
+
+
+/*---event.html-------------------*/
+
+article table {
+  font-size: 0.75em;
+  border: 1px solid #024002;
+  border-collapse: collapse;
+}
+
+article th {
+  width: 140px;
+  padding: 10px;
+  background-color: #90c990;
+  text-align: left;
+  border: 1px solid #024002;
+}
+
+article td {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #024002;
+}
+
+
+/*---contact.html-------------------*/
+
+article form p {
+  font-size: 0.875em;
+  /*form内の文字サイズを指定*/
+  margin-top: 20px;
+}
+
+article .button {
+  /*送信・リセットボタンの設定*/
+  width: 100px;
+  margin-right: 5px;
+}
+
+
+/*---clearfix-------------------*/
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

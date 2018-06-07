@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>Green Camp-森林探検隊-お問い合わせ</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="自然を楽しむための探検基地森林探検隊。Green Campでは四季を通してイベントが盛り沢山です。">
+  <link rel="stylesheet" href="../../../green_camp/css/style.css">
+</head>
+
+<body class="contact">
+  <div id="wrapper">
+    <header>
+      <h1><img src="../../../green_camp/images/title.png" width="312" height="60" alt="Green Campのロゴです。"></h1>
+      <p>自然を楽しむための探検基地森林探検隊。
+        <br> Green Campでは四季を通してイベントが盛り沢山です。</p>
+    </header>
+    <nav class="clearfix">
+      <ul>
+        <li class="homemenu"><a href="../../../green_camp/index.html">TOP</a></li>
+        <li class="eventmenu"><a href="../../../green_camp/event.html">季節のイベント</a></li>
+        <li class="contactmenu"><a href="../../../green_camp/contact.html">お問い合わせ</a></li>
+        <li><a href="#">アクセスマップ</a></li>
+        <li><a href="https://www.google.co.jp" target="_blank">ブログ</a></li>
+      </ul>
+    </nav>
+    <main class="clearfix">
+      <article>
+        <section>
+          <h2>お問い合わせ</h2>
+          <p>ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。また、森林探検隊やイベントに関するご質問などもお気軽にお寄せください。</p>
+        </section>
+        <form action="../../../green_camp/form.cgi" method="post">
+          <p>
+            <label for="name">名前：
+              <br>
+            </label>
+            <input type="text" name="name" id="name" size="40">
+          </p>
+          <p>
+            <label for="mail">メールアドレス：
+              <br>
+            </label>
+            <input type="text" name="mail" id="mail" size="40">
+          </p>
+          <p>
+            <input type="radio" name="gender" id="man" value="man">
+            <label for="man">：男性</label>
+            <input type="radio" name="gender" id="woman" value="woman">
+            <label for="man">：女性</label>
+          </p>
+          <p>年齢：
+            <select name="age">
+              <option value="20">20代</option>
+              <option value="30">30代</option>
+              <option value="40">40代</option>
+              <option value="50">50代</option>
+            </select>
+          </p>
+          <p>
+            <label for="comment">コメント：
+              <br>
+            </label>
+            <textarea name="comment" id="comment" cols="50" rows="7"></textarea>
+          </p>
+          <p>
+            <input type="submit" value="送信" class="button">
+            <input type="reset" value="リセット" class="button">
+          </p>
+        </form>
+      </article>
+      <aside>
+        <p><img src="../../../green_camp/images/bn_01.jpg" width="160" height="80" alt="#"></p>
+        <p><img src="../../../green_camp/images/bn_02.jpg" width="160" height="80" alt="#"></p>
+        <p><img src="../../../green_camp/images/bn_03.jpg" width="160" height="80" alt="#"></p>
+        <p><img src="../../../green_camp/images/bn_04.jpg" width="160" height="80" alt="#"></p>
+      </aside>
+    </main>
+    <footer>
+      <small>Copyright &copy; Green Camp, All rights reserved.</small>
+    </footer>
+  </div>
+  <!--end#wrapper-->
+</body>
+
+</html>

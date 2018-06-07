@@ -1,0 +1,168 @@
+@charset "utf-8";
+body {
+	background-image: url("../../../../forest_studio/images/back.png");
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+}
+/*layout----------------------------------*/
+#wrapper {
+	width: 780px;
+	background-color: #fff;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	margin-left: auto;
+	margin-right: auto;
+}
+header {
+	height: 169px;
+	padding-top: 28px;
+	padding-left: 20px;
+	background-image: url("../../../../forest_studio/images/sky-top.jpg");
+	border-bottom: 1px solid #666;
+}
+main {
+	margin-top: 20px;
+	margin-bottom: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-image: url("../../../../forest_studio/images/navi_bg.gif");/*←ナビの色帯*/
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+#content {
+	width: 570px;
+	float: right;
+}
+nav {
+	width: 170px;
+	float: left;
+}
+/*header-------------------------------------*/
+header h1 {
+	margin-bottom: 10px;
+}
+header p {
+	font-size: 0.75em;
+	line-height: 0.75em;
+	color:#FFF;
+}
+/*section#content------------------------------------*/
+#content h2 {
+	font-size: 0.875em;
+	color: #fff;
+	line-height: 28px;
+	background-color: #a40000;
+	padding-left: 12px;
+}
+#content h3 {
+	font-size: 0.875em;
+	color: #000;
+	line-height: 20px;
+	background-image: url("../../../../forest_studio/images/mark.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+	border-bottom: 2px solid #a40000;
+	margin-top: 30px;
+	clear: both;
+}
+#content p {
+	font-size: 0.75em;
+	color: #000;
+	line-height: 1.5;
+	margin-top: 10px;
+}
+#content p img {
+	float: right;
+	margin-left: 10px;
+}
+/*nav---------------------------------------*/
+nav ul {
+	list-style-type: none;
+	line-height: 0;/*IE6用*/
+}
+nav li a {
+	display: block;
+	font-size: 0.75em;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 34px;
+	background-color: #a40000;
+	padding-left: 20px;
+	border-bottom: 1px solid #fff;
+}
+nav li a:hover {
+	background-color: #5e0303;
+}
+/*↓各ページのメニュー項目の色を変える*/
+#home li#homemenu a, #event li#eventmenu a, #contact li#contactmenu a {
+	background-color: #5e0303;
+}
+/*footer-------------------------------------*/
+footer {
+	font-size: 0.75em;
+	color: #000;
+	font-style: normal;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 20px;
+	border-top: 1px solid #a40000;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*タブレット用-------------------------------*/
+@media screen and (min-width:481px) and (max-width:768px) {
+#wrapper {
+	width: 95%;
+}
+nav {
+	width: 100%;
+	float: none;
+}
+nav ul li {
+	width: 33.3%;
+	float: left;
+}
+#accessmap {
+	clear: both;
+}
+nav ul li a {
+	font-size: 50%;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	padding-left: 0px;
+}
+article#content {
+	width: 100%;
+}
+main {
+	background: lightblue;
+}
+#content section h2 {
+	margin-top: 20px;
+}
+}
+
+/*スマホ用---------------------------------------*/
+@media screen and (max-width:480px) {
+#wrapper {
+	width: 100%;
+}
+nav {
+	width: 100%;
+	float: none;
+}
+article#content {
+	width: 100%;
+	float: none;
+}
+main {
+	background: pink;
+}
+#content section h2 {
+	margin-top: 20px;
+}
+}
